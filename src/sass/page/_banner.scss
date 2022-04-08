@@ -1,0 +1,109 @@
+.midbanner{
+    background: $color-primary;
+    width: 100%;
+    margin: 16rem 0;
+    padding: 7rem 0;
+    position: relative;
+    color: $color-white;
+
+    & .midbanner-info{
+        padding-left: 10rem;
+        width: 40%;
+        & h1{
+            padding-bottom: 1rem;
+            font-weight: 300;
+            // font-size: $fs1;
+        }
+
+        // & p{
+        //     font-size: $fs5;
+        // }
+
+    }
+
+    & .midbanner-img {
+        height: 37rem;
+        width: 37rem;
+        right: 3rem;
+        top: -5rem;
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+.bottom-banner{
+    background-image: url("../../images/sushitray.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 28rem;
+    position: relative;
+    margin: 16rem 0;
+
+    & .bottom-banner-info{
+        background: $color-white;
+        width: 40%;
+        position: absolute;
+        top: 9rem;
+        left: 10rem;
+        padding: 3rem 3rem;
+        box-shadow: 0 5px 10px 5px rgba($color: #000000, $alpha: 0.25);
+
+        & h1{
+            padding-bottom: 1rem;
+            font-weight: 300;
+            // font-size: $fs1;
+        }
+
+        // & p{
+        //     font-size: $fs5;
+        // }
+    }
+}
+
+@media(max-width:1200px){
+    .midbanner{
+        padding: 2rem 0;
+        & .midbanner-info{
+            padding-bottom: 20rem;
+            margin: 0 auto;
+            padding-left: 0;
+            width: 80%;
+        }
+        & .midbanner-img{
+            height: 30rem;
+            width: 30rem;
+            top: 14rem;
+            right: 50%;
+            transform: translate(50%, 0);
+        }
+    }
+
+    .bottom-banner{
+        
+        & .bottom-banner-info{
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 60%;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .midbanner{
+
+        & .midbanner-img{
+            width: 80%;
+            top: 19rem;
+        }
+    }
+
+    .bottom-banner{
+        
+        & .bottom-banner-info{
+            padding: 1.5rem;
+        }
+    }
+
+}

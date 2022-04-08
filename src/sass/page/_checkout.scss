@@ -1,0 +1,92 @@
+
+.relativeParent{
+    position: relative;
+    padding: 0 1rem;
+    
+}
+
+.checkout{
+    margin: -25rem auto 6rem auto;
+    max-width: 60rem;
+    background-color: $color-white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+
+    & .checkout-left{
+        min-width: 0%;
+        display: inline-flex;
+        justify-content: center;
+
+        & img{
+            width: 26rem;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+    }
+
+    & .checkout-right{
+        width: 40rem;
+        padding: 2rem;
+        color: $color-primary-dark;
+
+        & h1, h2{
+            padding: 1rem 0;
+        }
+
+        & .inputBox{
+            width: 100%;
+            border: none;
+            border-bottom: 1.5px solid $color-gray-transparant;
+            padding-top: 0.7rem;
+            margin-bottom: 1rem;
+            border-radius: 0.3rem;
+            font-size: $fs4;
+        }
+        & .inputBox:focus{
+            outline: none;
+        }
+        & .checkout-input{
+            padding-top: 1rem;
+            
+        }
+
+        & .checkout-select{
+            padding-top: 0.7rem;
+
+            & select{
+                width: 100%;
+                margin-top: 0.7rem;
+                font-size: $fs4;
+                border-radius: 0.3rem;
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+        }
+
+        & .checkout-date{
+            display: flex;
+            align-items: center;
+            & input {
+                margin: 1rem;
+            }
+        }
+       
+    }
+
+}
+
+@media(max-width: 500px){
+    .checkout{
+
+        & .checkout-left{
+            width: 0;
+        }
+    }
+}
+
+
