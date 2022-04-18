@@ -2,7 +2,9 @@ import React from 'react'
 import Card from '../UI/Card'
 import MealItem from './MealItem'
 import Sallad from "../../images/sallad.png"
+import Sallad2 from "../../images/sallad2.png"
 import Sushi from "../../images/sushi.png"
+import Sushi2 from "../../images/sushi2.png"
 
 const DUMMY_MEALS = [
     {
@@ -21,17 +23,17 @@ const DUMMY_MEALS = [
     },
     {
         id: 3,
-        name: "Sushi 15 bitar",
-        description: "15 bitar blandat Sushi",
-        price: 129,
-        image: Sushi,
+        name: "Sushi 20 bitar",
+        description: "20 bitar blandat Sushi",
+        price: 139,
+        image: Sushi2,
     },
     {
         id: 4,
         name: "Sallad",
         description: "Mix grön sallad",
         price: 69,
-        image: Sallad,
+        image: Sallad2,
     },
     {
         id: 5,
