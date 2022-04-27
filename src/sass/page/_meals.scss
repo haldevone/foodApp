@@ -25,8 +25,15 @@
     }
   }
 
-  .meals-btns{
-    margin-top: -52rem;
+  .meals-top{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -54rem;
+    padding-bottom: 5rem;
+    max-width: 48rem;
+    color: $color-gray;
+    background: $color-gray;
+    height: 4rem;
   }
 
   .meals {
