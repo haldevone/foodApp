@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import Drinks from '../checkout/Drinks';
 import AvailableMeals from './AvailableMeals'
 import MealSummary from './MealSummary'
-import Sallad from "../../images/sallad.png"
-import Cola from "../../images/cola.png"
 import MidBanner from '../layout/MidBanner';
 import BottomBanner from '../layout/BottomBanner';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -50,10 +48,6 @@ function Meals() {
           <h2>Tillbehör</h2>
           <span><FontAwesomeIcon icon={faCirclePlus}/></span>
         </div>
-        {/* <div className='food-button' onClick={hideFood}>
-          <h2>Tillbehör</h2>
-          <span><FontAwesomeIcon icon={faCirclePlus}/></span>
-        </div> */}
       </div>
       {(() => {
         switch(foodSelect){

@@ -30,7 +30,6 @@ function App() {
 
   return (
     <CartProvider>
-      
       {cartIsShown && <Cart onClose={hidecartHandler} onOrder={showCheckout}/>}
       <Header onShowCart={showcartHandler}/>
       {!checkout ? 
